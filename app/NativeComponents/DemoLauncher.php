@@ -75,6 +75,21 @@ class DemoLauncher extends NativeComponent
                 ['id' => 'youtube', 'title' => 'YouTube', 'subtitle' => 'Home, video, channel, search', 'icon' => 'play.rectangle.fill', 'color' => '#FF0000', 'url' => '/youtube'],
             ],
         ],
+        [
+            'title' => 'Real App Concepts',
+            'demos' => [
+                ['id' => 'biteclub', 'title' => 'BiteClub', 'subtitle' => 'Food delivery: restaurant cards, dish detail, cart state', 'icon' => 'fork.knife', 'color' => '#FF6B35', 'url' => '/real-world/biteclub'],
+                ['id' => 'syncup-concept', 'title' => 'SyncUp', 'subtitle' => 'Messaging: chat threads, presence, native tabs', 'icon' => 'bubble.left.and.bubble.right.fill', 'color' => '#0891B2', 'url' => '/real-world/syncup'],
+                ['id' => 'vibepass', 'title' => 'VibePass', 'subtitle' => 'Events: RSVP, ticket detail, QR pass flow', 'icon' => 'ticket.fill', 'color' => '#7C3AED', 'url' => '/real-world/vibepass'],
+                ['id' => 'frame', 'title' => 'Frame', 'subtitle' => 'Photo feed: stories, post detail, profile grid', 'icon' => 'camera.fill', 'color' => '#E1306C', 'url' => '/real-world/frame'],
+                ['id' => 'pulse', 'title' => 'Pulse', 'subtitle' => 'Microblog: timeline, profile, composer', 'icon' => 'quote.bubble.fill', 'color' => '#1D9BF0', 'url' => '/real-world/pulse'],
+                ['id' => 'marketnest', 'title' => 'MarketNest', 'subtitle' => 'Marketplace: listings, filters, favourites, seller cards', 'icon' => 'tag.fill', 'color' => '#F97316', 'url' => '/real-world/marketnest'],
+                ['id' => 'stayflow', 'title' => 'StayFlow', 'subtitle' => 'Travel booking: search, stay detail, reserve sheet', 'icon' => 'house.fill', 'color' => '#FF385C', 'url' => '/real-world/stayflow'],
+                ['id' => 'tunedeck', 'title' => 'TuneDeck', 'subtitle' => 'Music: playlists, artist pages, mini-player', 'icon' => 'music.note', 'color' => '#1DB954', 'url' => '/real-world/tunedeck'],
+                ['id' => 'shoproom', 'title' => 'ShopRoom', 'subtitle' => 'E-commerce: product cards, cart, checkout progress', 'icon' => 'bag.fill', 'color' => '#0058A3', 'url' => '/real-world/shoproom'],
+                ['id' => 'fieldkit', 'title' => 'FieldKit', 'subtitle' => 'Offline field service: jobs, checklist, sync state', 'icon' => 'checklist', 'color' => '#0F766E', 'url' => '/real-world/fieldkit'],
+            ],
+        ],
     ];
 
     /**

@@ -8,9 +8,10 @@ it('shows every demo group on mount', function () {
         ->assertScreen(DemoLauncher::class)
         ->assertNavTitle('SuperNative Demo')
         ->assertSee('Counter')
-        ->assertSee('Twitter / X');
+        ->assertSee('Twitter / X')
+        ->assertSee('BiteClub');
 
-    expect($screen->get('groups'))->toHaveCount(4);
+    expect($screen->get('groups'))->toHaveCount(5);
 });
 
 it('filters the demo list by search query', function () {
@@ -36,7 +37,7 @@ it('restores the full list when the query is cleared', function () {
         ->call('findADemo', 'ikea')
         ->call('findADemo', '');
 
-    expect($screen->get('groups'))->toHaveCount(4);
+    expect($screen->get('groups'))->toHaveCount(5);
 });
 
 it('restores the full list when resuming from a pushed demo', function () {
@@ -44,5 +45,5 @@ it('restores the full list when resuming from a pushed demo', function () {
         ->call('findADemo', 'counter')
         ->call('onResume');
 
-    expect($screen->get('groups'))->toHaveCount(4);
+    expect($screen->get('groups'))->toHaveCount(5);
 });

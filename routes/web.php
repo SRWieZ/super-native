@@ -52,6 +52,7 @@ use App\NativeComponents\Phase2MemoTest;
 use App\NativeComponents\Phase4VirtualListTest;
 use App\NativeComponents\Profile;
 use App\NativeComponents\ReactivityDemo;
+use App\NativeComponents\RealWorldDemo;
 use App\NativeComponents\RefreshableDemo;
 use App\NativeComponents\SpotifyArtist;
 use App\NativeComponents\SpotifyHome;
@@ -156,6 +157,7 @@ Route::nativeGroup(StackLayout::class, function () {
     Route::native('/instagram', InstagramFeed::class)->name('instagram.feed');
     Route::native('/spotify', SpotifyHome::class)->name('spotify.home');
     Route::native('/youtube', YouTubeHome::class)->name('youtube.home');
+    Route::native('/real-world/{slug}', RealWorldDemo::class)->name('real-world.demo');
 });
 
 // ── Demo INNER routes — keep their own custom blade chrome ──
