@@ -157,8 +157,12 @@ Route::nativeGroup(StackLayout::class, function () {
     Route::native('/instagram', InstagramFeed::class)->name('instagram.feed');
     Route::native('/spotify', SpotifyHome::class)->name('spotify.home');
     Route::native('/youtube', YouTubeHome::class)->name('youtube.home');
-    Route::native('/real-world/{slug}', RealWorldDemo::class)->name('real-world.demo');
 });
+
+// Real-world app POCs are screenshot targets and should feel like app home
+// screens, not pushed demo pages, so keep them chrome-less (no StackLayout
+// top bar/back button).
+Route::native('/real-world/{slug}', RealWorldDemo::class)->name('real-world.demo');
 
 // ── Demo INNER routes — keep their own custom blade chrome ──
 // Twitter / X
